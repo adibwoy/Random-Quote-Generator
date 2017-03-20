@@ -1,0 +1,86 @@
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quote-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  background: url("https://unsplash.it/500/500/?image=173") no-repeat;
+  background-size: cover;
+
+  border-radius: 25px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  height: 60%;
+  width: 40%;
+
+  padding: 24px;
+}
+
+.quote-refresh {
+  background: none;
+  border: none;
+  font-size: 16px;
+  position: absolute;
+  outline: none;
+  cursor: pointer;
+  top: 12px;
+  right: 12px;
+  padding: 12px;
+}
+
+
+.quote-author {
+  font-family: "Josefin Sans";
+  margin: 12px;
+  align-self: flex-end;
+  font-size: 16px;
+}
+
+.quote {
+  font-family: "Arvo";
+  font-size: 36px;
+  margin: 12px;
+  text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+  .quote-card {
+    height: 55%;
+    width: 50%;
+  }
+
+  .quote {
+    font-size: 32px
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .quote-card {
+    height: 50%;
+    width: 65%;
+  }
+
+  .quote {
+    font-size: 30px
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .quote-card {
+    height: 50%;
+    width: 80%;
+  }
+
+  .quote {
+    font-size: 28px
+  }
+}
